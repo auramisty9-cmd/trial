@@ -1,0 +1,16 @@
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Sahana");
+    System.out.println("helen") ;
+    System.out.println("sakthi");
+    System.out.println("riya")  ;
+    System.out.println("reena") ;
+    System.out.println("teja")  ;
+    System.out.println("abi")   ;
+    System.out.println("rosh")  ;
+    System.out.println("reethu");
+    
+    
+    
+     }
+}
