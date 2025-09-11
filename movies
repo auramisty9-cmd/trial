@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Favourite movies HTML List</h2>
+
+<ul>
+  <li>thuppakki</li>
+  <li>lokah</li>
+  <li>vikram</li>
+  <li>nanban</li>
+  <li>raangi</li>
+  <li>hridayam</li>
+  <li>identity</li>
+  <li>raatchasan</li>
+  <li>saiyaara</li>
+</ul>  
+
+<h2>Favourite Web series HTML List</h2>
+
+<ol>
+  <li>When life gives you tangerine</li>
+  <li>Squid game</li>
+  <li>Heart beat</li>
+  <li>Touch me not</li>
+  <li>Wednesday</li>
+  
+</ol> 
+
+</body>
+</html>
