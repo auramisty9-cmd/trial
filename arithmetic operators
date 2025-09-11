@@ -1,0 +1,18 @@
+public class Main {
+  public static void main(String[] args) {
+    int x = 10;
+    int y = 3;
+
+    System.out.println(x + y); // 15 
+    System.out.println(x - y); // 9
+    System.out.println(x * y); // 20
+    System.out.println(x / y); // 1
+    
+
+    
+    
+
+    
+  
+  }
+}
