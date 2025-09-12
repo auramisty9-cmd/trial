@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input numbers
+        System.out.print("Enter first number:a ");
+        int a = sc.nextInt();
+        System.out.print("Enter second number:1 ");
+        int b = sc.nextInt();
+
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+
+        // Swapping without third variable
+        a = a + b;  // sum stored in a
+        b = a - b;  // (a + b) - b = a
+        a = a - b;  // (a + b) - a = b
+
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
+}
