@@ -1,0 +1,33 @@
+//check Prime Number Program in Java
+class Main {
+
+  static boolean isPrime(int n) {
+    boolean flag = true;
+      
+    // Check if the number is <= 1
+    if (n <= 1) {
+      flag = false;
+      return flag;
+    }
+      
+    // Check for factors
+    for (int j = 2; j <= n / 2; j++) {
+      if (n % j == 0) {
+        flag = false;
+        break;
+      }
+    }
+      
+    return flag;
+  }
+
+  public static void main(String[] args) {
+    if (isPrime(13)) {
+      System.out.println("The number is prime");
+    } 
+    else {
+      System.out.println("The number is not prime");
+    }
+  }
+}
+
