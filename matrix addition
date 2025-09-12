@@ -1,0 +1,49 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Define two matrices
+        int[][] matrixA = {
+            {10, 12, 31},
+            {41, 15, 61},
+            {17, 81, 19}
+        };
+
+        int[][] matrixB = {
+            {91, 18, 71},
+            {61, 15, 14},
+            {31, 12, 11}
+        };
+
+        // Get dimensions
+        int rowsA = matrixA.length;
+        int colsA = matrixA[0].length;
+        int rowsB = matrixB.length;
+        int colsB = matrixB[0].length;
+
+        // Check for compatible dimensions
+        if (rowsA != rowsB || colsA != colsB) {
+            System.out.println("Error: Matrices must have the same dimensions for addition.");
+            return;
+        }
+
+        // Create a resultant matrix
+        int[][] resultMatrix = new int[rowsA][colsA];
+
+        // Perform matrix addition
+        for (int i = 0; i < rowsA; i++) {
+            for (int j = 0; j < colsA; j++) {
+                resultMatrix[i][j] = matrixA[i][j] + matrixB[i][j];
+            }
+        }
+
+        // Print the resultant matrix
+        System.out.println("Resultant Matrix (Matrix A + Matrix B):");
+        for (int i = 0; i < rowsA; i++) {
+            for (int j = 0; j < colsA; j++) {
+                System.out.print(resultMatrix[i][j] + "\t");
+            }
+            System.out.println(); // New line after each row
+        }
+    }
+}
