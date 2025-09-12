@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // Declare and initialize an array
+        int[] numbers = {52, 35, 48, 28, 113, 150};
+
+        // Initialize 'min' with the first element of the array
+        int min = numbers[0];
+
+        // Iterate through the array starting from the second element
+        for (int i = 1; i < numbers.length; i++) {
+            // If the current element is smaller than 'min', update 'min'
+            if (numbers[i] < min) {
+                min = numbers[i];
+            }
+        }
+
+        // Print the smallest element
+        System.out.println("The smallest element in the array is: " + min);
+    }
+}
