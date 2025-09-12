@@ -1,0 +1,49 @@
+public class Main {
+
+    public static void main(String[] args) {
+        // Define two matrices
+        int[][] matrixA = {
+            {11, 21, 13},
+            {41, 15, 61}
+        };
+
+        int[][] matrixB = {
+            {17, 18},
+            {91, 110},
+            {111, 112}
+        };
+
+        // Get dimensions
+        int rowsA = matrixA.length;
+        int colsA = matrixA[0].length;
+        int rowsB = matrixB.length;
+        int colsB = matrixB[0].length;
+
+        // Check if multiplication is possible
+        if (colsA != rowsB) {
+            System.out.println("Matrix multiplication not possible. Number of columns in first matrix must equal number of rows in second matrix.");
+            return;
+        }
+
+        // Create a result matrix
+        int[][] resultMatrix = new int[rowsA][colsB];
+
+        // Perform matrix multiplication
+        for (int i = 0; i < rowsA; i++) { // Iterate through rows of matrixA
+            for (int j = 0; j < colsB; j++) { // Iterate through columns of matrixB
+                for (int k = 0; k < colsA; k++) { // Iterate through columns of matrixA (or rows of matrixB)
+                    resultMatrix[i][j] += matrixA[i][k] * matrixB[k][j];
+                }
+            }
+        }
+
+        // Print the result matrix
+        System.out.println("Resultant Matrix:");
+        for (int i = 0; i < rowsA; i++) {
+            for (int j = 0; j < colsB; j++) {
+                System.out.print(resultMatrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
