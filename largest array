@@ -1,0 +1,30 @@
+public class Main {
+
+    public static void main(String[] args) {
+        int[] numbers = {120, 495, 600, 890, 223, 1078}; // Example array
+        int largest = findLargestElement(numbers);
+        System.out.println("The largest element in the array is: " + largest);
+    }
+
+    /**
+     * Finds the largest element in an integer array.
+     *
+     * @param arr The array to search.
+     * @return The largest element in the array.
+     */
+    public static int findLargestElement(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            throw new IllegalArgumentException("Array cannot be null or empty.");
+        }
+
+        int max = arr[0]; // Assume the first element is the largest initially
+
+        // Iterate through the rest of the array
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i]; // Update max if a larger element is found
+            }
+        }
+        return max;
+    }
+}
